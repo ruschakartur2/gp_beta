@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto rotate</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+        #panorama {
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+    pannellum.viewer('panorama', {
+        "type": "equirectangular",
+        "panorama": "https://www.google.com/maps/@48.9209342,24.7109698,3a,75y,323.57h,75.66t/data=!3m7!1e1!3m5!1sAF1QipOVZEXIw5x1AX_8ItHdUMboYvGYaT5be5DrZow!2e10!3e12!7i10000!8i5000",
+        "autoRotate": -2
+    });
+</script>
+
+</body>
+</html>
