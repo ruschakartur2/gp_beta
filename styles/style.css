@@ -90,10 +90,11 @@ nav a:hover {
     padding:5vh;
 }
 .our-content .elem {
-    max-width:250px;
+   width:250px;
     margin: 3vh;
-    max-height:400px;
+    height:400px;
     margin-top: 4vh;
+
 }
 .our-content .elem img {
     width:100%;
@@ -102,3 +103,8 @@ nav a:hover {
 }
 
 
+@media (max-width: 992px) {
+    .our-content .elem {
+        height:300px;
+    }
+}
