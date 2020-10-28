@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 </head>
 <body>
 <div class="main">
@@ -15,9 +17,8 @@
            </div>
 
             <div class="navs">
-                <nav><a href="">HOME</a></nav>
-                <nav><a href="">ABOUT</a></nav>
-                <nav><a href="">SUPPORT</a></nav>
+                <nav><a href="">Головна</a></nav>
+
             </div>
 
         </div>
@@ -31,19 +32,31 @@
             </div>
         </div>
 
+                <div class="our-content">
+                    <div class="elem"><img src="assets/images/1_elem.jpg" alt=""></div>
+                    <div class="elem"><img src="assets/images/2_elem.jpg" alt="" ></div>
+                    <div class="elem"><img src="assets/images/3_elem.jpg" alt="" ></div>
+                    <div class="elem"><img src="assets/images/4_elem.jpg" alt="" ></div>
+                </div>
+
     </div>
+
 </div>
 
-<div class="our">
-    <div class="wrapper">
-        <h2>Наші таблички</h2>
-        <div class="our-content">
-            <div class="elem"><img src="assets/images/1_elem.jpg" alt=""></div>
-            <div class="elem"><img src="assets/images/2_elem.jpg" alt="" ></div>
-            <div class="elem"><img src="assets/images/3_elem.jpg" alt="" ></div>
-            <div class="elem"><img src="assets/images/4_elem.jpg" alt="" ></div>
-        </div>
-    </div>
-</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.our-content').slick({
+            autoplay : true,
+            autoplaySpeed: 1500,
+            arrows : false,
+            mobileFirst: true,
+            slidesToShow: 2,
+
+    });
+    });
+</script>
 </body>
 </html>
