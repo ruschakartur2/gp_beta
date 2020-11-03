@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Головна People in Forest</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="toggle">
+        <input type="checkbox" id="menu-toggle"/>
+        <label id="trigger" for="menu-toggle"></label>
+        <label id="burger" for="menu-toggle"></label>
+        <ul id="menu">
+            <li>
+                <div class="logo"><img src="assets/images/logo.png" width="150" alt=""></div>
+                <div class="title"><h1>People in Forest</h1></div>
+                <div class="navs">
+                    <div class="nav active"><a href="">Головна</a></div>
+                    <div class="nav"><a href="">Історія</a></div>
+                    <div class="nav"><a href="">Команда</a></div>
+                    <div class="nav"><a href="">Поширені запитання</a></div>
+                </div></li>
+
+        </ul>
+    </div>
+<div class="left-navbar">
+
+
+    <div class="logo"><img src="assets/images/logo.png" width="150" alt=""></div>
+    <div class="title"><h1>People in Forest</h1></div>
+    <div class="navs">
+        <div class="nav active"><a href="">Головна</a></div>
+        <div class="nav"><a href="">Історія</a></div>
+        <div class="nav"><a href="">Команда</a></div>
+        <div class="nav"><a href="">Поширені запитання</a></div>
+    </div>
+</div>
+<div class="right-wrapper">
+    <div class="header">
+        <div class="head-wrap">
+        <h2 class="head-title">People in Forest</h2>
+        <h4 class="sub-title"><i>Дана платформа - це SMART інструмент для озеленення міст України</i></h4>
+        </div>
+    </div>
+
+    <div class="mission">
+        <h2>Місія проекту</h2>
+        <h5><i> Зробити озеленення міст доступним для всіх мешканців. За допомогою найсучасніших технологій	 ми прагнемо оновлення зелених зон. Для прикладу житель Києва зможе посадити дерево в Львові.</i></h5>
+
+        <div class="images" id="slider">
+            <div class="image">
+                <img src="assets/images/1_elem.jpg" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="image">
+                <img src="assets/images/2_elem.jpg" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="image">
+                <img src="assets/images/3_elem.jpg" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="image">
+                <img src="assets/images/4_elem.jpg" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="assets/images/1_elem.jpg" alt="" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="assets/images/2_elem.jpg" alt="" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="assets/images/3_elem.jpg" alt="" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="assets/images/4_elem.jpg" alt="" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="map">
+        <a href="google_maps.html">Переглянути карту</a>
+    </div>
+
+    <div class="question">
+        <h2>Є запитання?</h2>
+        <h5>Щоб отримати докладну інформацію про проект, надішліть листа на адресу [електронна адреса]</h5>
+        <div class="write">
+        <a href="">Написати</a>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+
+
+
+    $(document).ready(function(){
+        $('#slider').slick({
+            autoplay : true,
+            autoplaySpeed: 1500,
+            arrows : false,
+            mobileFirst: true,
+            slidesToShow: 1,
+
+        });
+    });
+    // Get the modal
+    // Open the Modal
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    // Close the Modal
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+
+
+
+
+</script>
+</body>
+</html>
