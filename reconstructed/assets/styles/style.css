@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Roboto Slab', serif;
+}
+.wrapper {
+    display:flex;
+    height:100%;
+}
+.left-navbar {
+    padding-top: 7vh;
+    position: sticky;
+    top:0;
+    overflow: auto;
+    max-width:360px;
+    background-color: rgba(3,5,3,0.7);
+    height:100vh;
+}
+.logo {
+    text-align: center;
+}
+.title {
+    text-align: center;
+    color:lightgray;
+}
+.navs {
+    margin-top: 5vh;
+}
+.nav {
+    padding:2vh;
+    font-size: 1.5rem;
+
+
+}
+.nav a {
+    text-decoration: none;
+    color: lightcyan;
+}
+.nav a:hover {
+    color:white;
+}
+.active {
+    background-color: forestgreen;
+}
+.right-wrapper{
+    width:100%;
+    height:100%;
+}
+.header {
+    background-image: url("https://lh3.googleusercontent.com/oXDBX_qPjEpnuY61o_aDP6lxNzSTi5lHaveP8Qgzs61wak6gXeLcWyBB6bEYXVyzivQ7fHPK=w16383");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+
+    width:100%;
+    height:65vh;
+}
+.head-wrap{
+    background-color: rgba(42,74,70,0.8);
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.head-title {
+    font-size: 5rem;
+    color:white;
+}
+.sub-title {
+    color:white;
+    margin-top: 4vh;
+}
+
+.mission {
+    padding: 10vh 10vh;
+    text-align:center;
+}
+.mission h2 {
+    color: rgba(42,74,70,2);
+}
+.mission h5 {
+    margin-top: 3vh;
+    line-height: 2.2rem;
+}
+
+.images {
+    max-width:1050px;
+
+    margin:0 auto;
+    margin-top: 15vh;
+}
+.image {
+
+}
+.image img {
+    width:100%;
+    height:100%;
+}
+/* Slider */
+
+
+/* Create four equal columns that floats next to eachother */
+
+.column img {
+    width:100%;
+    height:100%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 20vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.map {
+    text-align:center;
+    padding:10vh;
+    background-image: url(https://lh4.googleusercontent.com/UD2PfruY8_fOaM8k4bCHqsC2K4DQJbydRDKxm_ptniaNSWaVlOaSXAXH7olZWdbXnucEb7Yv=w16383);
+    background-size: cover;
+    background-position: center center;
+}
+.map a {
+    text-decoration: none;
+    padding:3vh 6vh;
+    background-color: rgba(42,74,70,0.8);
+    color: lightgreen;
+    font-size: 1.5rem;
+    border-radius: 10vh;
+}
+.question {
+    max-width:900px;
+    padding:15vh;
+    margin: 0 auto;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+}
+.question h2{
+    color: rgba(42,74,70,1);
+}
+.question h5 {
+    margin-top: 4vh;
+    line-height: 2rem;
+}
+.question a {
+    margin-top: 3vh;
+    background-color: darkgreen;
+    padding: 2vh 20vh;
+    color:lightcyan;
+    text-decoration: none;
+}
