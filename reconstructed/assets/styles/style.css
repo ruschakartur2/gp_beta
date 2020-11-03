@@ -31,8 +31,6 @@
 .nav {
     padding:2vh;
     font-size: 1.5rem;
-
-
 }
 .nav a {
     text-decoration: none;
@@ -271,6 +269,9 @@ img.hover-shadow {
     .toggle {
         display: block;
     }
+    .left-navbar {
+        display: none;
+    }
 }
 
 @keyframes checked-anim {
@@ -377,3 +378,85 @@ a:focus {
 }
 
 
+/* Team styles */
+
+.right-wrapper .team-header {
+    padding:10vh;
+    background-color: rgba(42,74,70,1);
+    text-align: center;
+    color:lightgray;
+}
+.right-wrapper {
+
+}
+.team-header h4 {
+    margin-top: 3vh;
+    font-size: 1.2rem;
+}
+.person img {
+    width:300px;
+    height:300px;
+}
+.content {
+    padding:10vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.person {
+    max-width: 390px;
+    margin-top: 5vh;
+    text-align: center;
+    line-height: 2rem;
+    padding:5vh;
+
+}
+.person img {
+    border-radius: 100%;
+}
+.person h2 {
+    margin-top: 5vh;
+}
+.person a {
+    margin-top: 3vh;
+    text-decoration: none;
+    color:slategray;
+}
+
+.invite {
+    padding:15vh;
+    margin: 0 auto;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(42,74,70,1);
+    color:lightgrey;
+}
+.invite h3 {
+    margin-top: 3vh;
+    font-size: 1.5rem;
+}
+.invite h5 {
+    margin-top: 2vh;
+    font-size: 1rem;
+}
+.invite a {
+    margin-top: 3vh;
+    padding:4vh 5vh;
+    background-color: white;
+    color: rgba(42,74,70,1);
+    text-decoration: none;
+}
+
+
+.right-wrapper .history-header {
+    padding:10vh;
+    background-color: rgba(42,74,70,1);
+    text-align: center;
+    color:lightgray;
+}
+.history-header h4 {
+    margin-top: 3vh;
+    font-size: 1.2rem;
+}

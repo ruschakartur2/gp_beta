@@ -20,9 +20,9 @@
                 <div class="logo"><img src="assets/images/logo.png" width="150" alt=""></div>
                 <div class="title"><h1>People in Forest</h1></div>
                 <div class="navs">
-                    <div class="nav active"><a href="">Головна</a></div>
-                    <div class="nav"><a href="">Історія</a></div>
-                    <div class="nav"><a href="">Команда</a></div>
+                    <div class="nav active"><a href="index.html">Головна</a></div>
+                    <div class="nav"><a href="history.html">Історія</a></div>
+                    <div class="nav"><a href="team.html">Команда</a></div>
                     <div class="nav"><a href="">Поширені запитання</a></div>
                 </div></li>
 
@@ -35,8 +35,8 @@
     <div class="title"><h1>People in Forest</h1></div>
     <div class="navs">
         <div class="nav active"><a href="">Головна</a></div>
-        <div class="nav"><a href="">Історія</a></div>
-        <div class="nav"><a href="">Команда</a></div>
+        <div class="nav"><a href="history.html">Історія</a></div>
+        <div class="nav"><a href="team.html">Команда</a></div>
         <div class="nav"><a href="">Поширені запитання</a></div>
     </div>
 </div>
@@ -123,65 +123,7 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript">
-
-
-
-    $(document).ready(function(){
-        $('#slider').slick({
-            autoplay : true,
-            autoplaySpeed: 1500,
-            arrows : false,
-            mobileFirst: true,
-            slidesToShow: 1,
-
-        });
-    });
-    // Get the modal
-    // Open the Modal
-    function openModal() {
-        document.getElementById("myModal").style.display = "block";
-    }
-
-    // Close the Modal
-    function closeModal() {
-        document.getElementById("myModal").style.display = "none";
-    }
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        var captionText = document.getElementById("caption");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-    }
-
-
-
-
-</script>
+<script src="assets/scripts/slick_start.js"></script>
+<script src="assets/scripts/slider.js"></script>
 </body>
 </html>
