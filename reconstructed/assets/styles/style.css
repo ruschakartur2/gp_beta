@@ -460,3 +460,24 @@ a:focus {
     margin-top: 3vh;
     font-size: 1.2rem;
 }
+
+.history-content {
+    padding:5vh;
+    line-height: 2.5vh;
+    max-width:1000px;
+    margin:0 auto;
+}
+.history-content h3 {
+    text-align:center;
+    font-size: 1.2rem;
+}
+.history-content p {
+    margin-top: 3vh;
+
+}
+.history-content h4 {
+    margin-top: 2vh;
+}
+.history-content li {
+    margin-top: 1.1vh;
+}
