@@ -1,13 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+
 @mainColor: rgba(40,70,75,0.7);
 @headerColor : rgba(42,74,70,0.8);
+#button-default {
+    padding:3vh 7vh;
+    display:block;
+    margin:0 auto;
+    max-width:350px;
+    border-radius: 100px;
+    margin-top: 3vh;
+    font-size: 1.2rem;
+    
+    a {
+        text-decoration: none;
+    }
+}
 /* START MAIN STYLES */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
 
 * {
     padding:0;
     margin:0;
     font-family: 'Roboto Slab', serif;
 }
+
+.button-default-main {
+    #button-default;
+    background-color: @mainColor;
+
+    a {
+        color:white;
+    }
+}
+.button-default-second {
+    background-color: white;
+    a {
+        color:@mainColor;
+    }
+}
+
 
 .wrapper {
     display:grid;
@@ -217,22 +247,12 @@ img.hover-shadow {
 // Map styles
 .map {
     text-align:center;
-    padding:10vh;
     background-image: url(https://lh4.googleusercontent.com/UD2PfruY8_fOaM8k4bCHqsC2K4DQJbydRDKxm_ptniaNSWaVlOaSXAXH7olZWdbXnucEb7Yv=w16383);
     background-size: cover;
     background-position: center center;
+    margin-bottom:7vh;
     // Map button
-    a {
-        text-decoration: none;
-        padding:3vh 6vh;
-        background-color: rgba(42,74,70,0.8);
-        color: lightgreen;
-        font-size: 1.5rem;
-        border-radius: 10vh;
-        display:block;
-        max-width:300px;
-        margin:0 auto;
-    }
+
 }
 // Question
 .question {
@@ -250,11 +270,7 @@ img.hover-shadow {
         line-height: 2rem;
         font-size: 1.1rem;
     }
-    a {
-        color:lightgreen;
-        text-decoration: none;
 
-    }
     .write {
         display: flex;
         padding:2vh 12vh;
@@ -436,17 +452,7 @@ a:focus {
         font-size: 1rem;
     }
 
-    a {
-        margin:0 auto;
-        margin-top: 5vh;
-        padding:3vh 7vh;
-        background-color: white;
-        color: rgba(42,74,70,1);
-        text-decoration: none;
-        max-width:300px;
-        display:block;
-        border-radius: 100px;
-    }
+
 }
 
 .history-header {

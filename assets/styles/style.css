@@ -1,4 +1,3 @@
-/* START MAIN STYLES */
 @font-face {
   font-family: 'Roboto Slab';
   font-style: normal;
@@ -6,10 +5,45 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/robotoslab/v12/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISWaA.ttf) format('truetype');
 }
+#button-default {
+  padding: 3vh 7vh;
+  display: block;
+  margin: 0 auto;
+  max-width: 350px;
+  border-radius: 100px;
+  margin-top: 3vh;
+  font-size: 1.2rem;
+}
+#button-default a {
+  text-decoration: none;
+}
+/* START MAIN STYLES */
 * {
   padding: 0;
   margin: 0;
   font-family: 'Roboto Slab', serif;
+}
+.button-default-main {
+  padding: 3vh 7vh;
+  display: block;
+  margin: 0 auto;
+  max-width: 350px;
+  border-radius: 100px;
+  margin-top: 3vh;
+  font-size: 1.2rem;
+  background-color: rgba(40, 70, 75, 0.7);
+}
+.button-default-main a {
+  text-decoration: none;
+}
+.button-default-main a {
+  color: white;
+}
+.button-default-second {
+  background-color: white;
+}
+.button-default-second a {
+  color: rgba(40, 70, 75, 0.7);
 }
 .wrapper {
   display: grid;
@@ -198,21 +232,10 @@ img.hover-shadow {
 }
 .map {
   text-align: center;
-  padding: 10vh;
   background-image: url(https://lh4.googleusercontent.com/UD2PfruY8_fOaM8k4bCHqsC2K4DQJbydRDKxm_ptniaNSWaVlOaSXAXH7olZWdbXnucEb7Yv=w16383);
   background-size: cover;
   background-position: center center;
-}
-.map a {
-  text-decoration: none;
-  padding: 3vh 6vh;
-  background-color: rgba(42, 74, 70, 0.8);
-  color: lightgreen;
-  font-size: 1.5rem;
-  border-radius: 10vh;
-  display: block;
-  max-width: 300px;
-  margin: 0 auto;
+  margin-bottom: 7vh;
 }
 .question {
   padding: 15vh;
@@ -229,10 +252,6 @@ img.hover-shadow {
   margin-top: 4vh;
   line-height: 2rem;
   font-size: 1.1rem;
-}
-.question a {
-  color: lightgreen;
-  text-decoration: none;
 }
 .question .write {
   display: flex;
@@ -400,17 +419,6 @@ a {
 .invite h5 {
   margin-top: 2vh;
   font-size: 1rem;
-}
-.invite a {
-  margin: 0 auto;
-  margin-top: 5vh;
-  padding: 3vh 7vh;
-  background-color: white;
-  color: #2a4a46;
-  text-decoration: none;
-  max-width: 300px;
-  display: block;
-  border-radius: 100px;
 }
 .history-header {
   padding: 10vh;
