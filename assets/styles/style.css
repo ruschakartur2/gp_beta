@@ -40,7 +40,17 @@
   color: white;
 }
 .button-default-second {
+  padding: 3vh 7vh;
+  display: block;
+  margin: 0 auto;
+  max-width: 350px;
+  border-radius: 100px;
+  margin-top: 3vh;
+  font-size: 1.2rem;
   background-color: white;
+}
+.button-default-second a {
+  text-decoration: none;
 }
 .button-default-second a {
   color: rgba(40, 70, 75, 0.7);
